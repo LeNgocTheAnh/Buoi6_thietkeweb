@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lê Ngọc Thế Anh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navigation[cite: 2] -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Portfolio<span>.</span></a>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="hamburger-btn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <nav class="nav-menu">
+                <a href="#about">Giới thiệu</a>
+                <a href="#id-card">Thẻ nhân sự</a>
+                <a href="#skills">Kỹ năng</a>
+                <a href="#projects">Dự án</a>
+                <a href="#contact" class="btn-nav">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BẮT ĐẦU ĐIỂM MỐC CHÍNH (MAIN LANDMARK) CHO TRÌNH ĐỌC MÀN HÌNH -->
+    <main>
+        <!-- Hero Section[cite: 2] -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">Frontend Developer</span>
+                    <h1>Xin chào, tôi là <span class="highlight">Lê Ngọc Thế Anh</span></h1>
+                    
+                    <div class="typing-container">
+                        <p class="typing-text">Tôi là một Web Developer...</p>
+                    </div>
+                    
+                    <p>Tôi chuyên thiết kế và phát triển giao diện web hiện đại, tối ưu trải nghiệm người dùng và hiệu năng cao.</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">Xem dự án</a>
+                        <a href="#contact" class="btn btn-secondary">Liên hệ ngay</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="img-placeholder">
+                        <span>👨‍💻</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section[cite: 2] -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">Về tôi</h2>
+                <p class="section-desc">Tôi là một lập trình viên yêu thích việc xây dựng các sản phẩm web tinh tế, chú trọng vào độ phản hồi linh hoạt (responsive) và chuẩn trải nghiệm người dùng (UX/UI).</p>
+            </div>
+        </section>
+
+        <!-- ID Card Section[cite: 2] -->
+        <section id="id-card" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Thẻ nhân sự</h2>
+                <p class="section-desc">Rê chuột (hoặc chạm) vào thẻ bên dưới để xem thông tin liên hệ ở mặt sau.</p>
+                
+                <div class="id-card-wrapper">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="card-header-bg"></div>
+                                <div class="card-avatar-wrap">
+                                    <div class="card-avatar">👨‍💻</div>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Nguyễn Văn A</h3>
+                                    <p class="card-role">Senior Frontend Engineer</p>
+                                    <span class="card-badge-status">● Đang hoạt động</span>
+                                    <div class="card-meta">
+                                        <span>Mã NV: <strong>FE-2026-88</strong></span>
+                                        <span>Phòng: <strong>Công nghệ thông tin</strong></span>
+                                    </div>
+                                </div>
+                                <div class="card-hint">Hover để lật mặt sau 🔄</div>
+                            </div>
+
+                            <div class="flip-card-back">
+                                <h3>Thông Tin Liên Hệ</h3>
+                                <div class="contact-list">
+                                    <div class="contact-item">
+                                        <span class="icon">📧</span>
+                                        <div>
+                                            <small>Email</small>
+                                            <p>lengoctheanh@example.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="icon">📞</span>
+                                        <div>
+                                            <small>Điện thoại</small>
+                                            <p>+84 901 234 567</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="icon">📍</span>
+                                        <div>
+                                            <small>Địa chỉ</small>
+                                            <p>TP. Hồ Chí Minh, Việt Nam</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="qr-code-box">
+                                    <div class="qr-placeholder">🔳 Scan QR</div>
+                                    <small>Quét mã để lưu danh bạ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section[cite: 2] -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Kỹ năng chuyên môn</h2>
+                
+                <div class="skills-wrapper">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress fill-html"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS3 / SCSS</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress fill-css"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript (ES6+)</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress fill-js"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React.js</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress fill-react"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js / Express</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress fill-node"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript (ES6+), React, Tailwind CSS</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Backend & Tools</h3>
+                        <p>Node.js, Express, RESTful API, Git, GitHub, Figma</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tối ưu & Khác</h3>
+                        <p>Responsive Design, Web Performance, SEO cơ bản</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parallax Banner[cite: 2] -->
+        <section class="parallax-banner">
+            <div class="parallax-overlay"></div>
+            <div class="container parallax-content">
+                <h2>Biến Ý Tưởng Thành Sản Phẩm Thực Tế</h2>
+                <p>Tôi luôn cố gắng xây dựng các giao diện tối ưu nhất về trải nghiệm và hiệu năng.</p>
+                <a href="#contact" class="btn btn-primary">Bắt đầu dự án ngay</a>
+            </div>
+        </section>
+
+        <!-- Projects Section[cite: 2] -->
+        <section id="projects" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Dự án nổi bật</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img">💻</div>
+                        <div class="project-info">
+                            <h3>Trang thương mại điện tử</h3>
+                            <p>Giao diện bán hàng tích hợp giỏ hàng, lọc sản phẩm và thiết kế tối ưu cho di động.</p>
+                            <div class="tags">
+                                <span>React</span>
+                                <span>CSS Grid</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">📱</div>
+                        <div class="project-info">
+                            <h3>Ứng dụng quản lý công việc</h3>
+                            <p>Ứng dụng To-Do hỗ trợ kéo thả, lưu dữ liệu LocalStorage và giao diện Dark Mode.</p>
+                            <div class="tags">
+                                <span>JavaScript</span>
+                                <span>Flexbox</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">🎨</div>
+                        <div class="project-info">
+                            <h3>Landing Page doanh nghiệp</h3>
+                            <p>Trang giới thiệu dịch vụ doanh nghiệp với hiệu ứng cuộn mượt và biểu mẫu liên hệ.</p>
+                            <div class="tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section[cite: 2] -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Liên hệ</h2>
+                <form class="contact-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <input type="text" placeholder="Họ và tên" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email của bạn" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Nội dung tin nhắn" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- KẾT THÚC ĐIỂM MỐC CHÍNH -->
+
+    <!-- Footer[cite: 2] -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Lê Ngọc Thế Anh. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <!-- Nút "Liên hệ" nổi[cite: 2] -->
+    <a href="#contact" class="floating-btn" title="Liên hệ ngay" aria-label="Liên hệ ngay">
+        💬
+    </a>
+</body>
+</html>
